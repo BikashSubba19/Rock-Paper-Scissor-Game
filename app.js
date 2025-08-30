@@ -3,14 +3,14 @@ let compScore = 0;
 
 const choices = document.querySelectorAll('.choice');
 const msg = document.querySelector('#msg');
-const container = document.querySelector('#container'); //homeWork
+const container = document.querySelector('#container');
 
 const userScorePara = document.querySelector('#user-score');
 const compScorePara = document.querySelector('#comp-score');
 
 const genCompChoice = () => {
       const options = ['rock', 'paper', 'scissor'];
-      const randIdx = Math.floor(Math.random() *3); //math.floor(); is to remove decimal number
+      const randIdx = Math.floor(Math.random() *3);
       return options[randIdx];
 };
 
@@ -58,4 +58,5 @@ choices.forEach((choice) => {
             const userChoice = choice.getAttribute('id')
             playGame(userChoice);
       });
+
 });
